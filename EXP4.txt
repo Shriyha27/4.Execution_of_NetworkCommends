@@ -1,0 +1,228 @@
+Microsoft Windows [Version 10.0.26100.7840]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\admin>ipconfig
+
+Windows IP Configuration
+
+
+Ethernet adapter Ethernet 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 1:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Wi-Fi 2:
+
+   Connection-specific DNS Suffix  . : saveetha.in
+   IPv6 Address. . . . . . . . . . . : 2403:8600:c090:42:0:400:3056:f47b
+   Link-local IPv6 Address . . . . . : fe80::6d3a:ba45:da88:ebc2%9
+   Autoconfiguration IPv4 Address. . : 169.254.216.112
+   Subnet Mask . . . . . . . . . . . : 255.255.0.0
+   Default Gateway . . . . . . . . . : fe80::eedd:24ff:fe3d:ced5%9
+
+C:\Users\admin>hostname
+SHRIYHA-VIJAY
+
+C:\Users\admin>getmac
+
+Physical Address    Transport Name
+=================== ==========================================================
+C4-C6-E6-DE-1D-AF   Media disconnected
+68-34-21-81-7C-70   \Device\Tcpip_{42527670-7750-4638-A65C-8BEA628D66C0}
+
+C:\Users\admin>ping google.com
+
+Pinging google.com [2404:6800:4007:832::200e] with 32 bytes of data:
+Reply from 2404:6800:4007:832::200e: time=180ms
+Reply from 2404:6800:4007:832::200e: time=54ms
+Reply from 2404:6800:4007:832::200e: time=12ms
+Reply from 2404:6800:4007:832::200e: time=8ms
+
+Ping statistics for 2404:6800:4007:832::200e:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 8ms, Maximum = 180ms, Average = 63ms
+
+C:\Users\admin>nslookup google.com
+Server:  UnKnown
+Address:  2403:8600:c090:42:a000::200
+
+Non-authoritative answer:
+Name:    google.com
+Addresses:  2404:6800:4007:832::200e
+          142.251.222.142
+
+
+C:\Users\admin>netstat
+
+Active Connections
+
+  Proto  Local Address          Foreign Address        State
+  TCP    127.0.0.1:49675        SHRIYHA-VIJAY:65244    TIME_WAIT
+  TCP    127.0.0.1:50322        SHRIYHA-VIJAY:49675    TIME_WAIT
+  TCP    127.0.0.1:51337        SHRIYHA-VIJAY:49675    TIME_WAIT
+  TCP    127.0.0.1:51338        SHRIYHA-VIJAY:49675    TIME_WAIT
+  TCP    127.0.0.1:53557        SHRIYHA-VIJAY:53559    ESTABLISHED
+  TCP    127.0.0.1:53559        SHRIYHA-VIJAY:53557    ESTABLISHED
+  TCP    127.0.0.1:54195        SHRIYHA-VIJAY:49675    TIME_WAIT
+  TCP    127.0.0.1:54198        SHRIYHA-VIJAY:49675    TIME_WAIT
+  TCP    127.0.0.1:54199        SHRIYHA-VIJAY:49675    TIME_WAIT
+  TCP    127.0.0.1:54200        SHRIYHA-VIJAY:53556    TIME_WAIT
+  TCP    127.0.0.1:55756        SHRIYHA-VIJAY:49675    TIME_WAIT
+  TCP    127.0.0.1:55759        SHRIYHA-VIJAY:49675    TIME_WAIT
+  TCP    127.0.0.1:55760        SHRIYHA-VIJAY:49675    TIME_WAIT
+  TCP    127.0.0.1:55765        SHRIYHA-VIJAY:49675    TIME_WAIT
+  TCP    127.0.0.1:55766        SHRIYHA-VIJAY:53556    TIME_WAIT
+  TCP    127.0.0.1:55767        SHRIYHA-VIJAY:49675    TIME_WAIT
+  TCP    127.0.0.1:58211        SHRIYHA-VIJAY:49675    TIME_WAIT
+  TCP    127.0.0.1:58212        SHRIYHA-VIJAY:49675    TIME_WAIT
+  TCP    127.0.0.1:58213        SHRIYHA-VIJAY:49675    TIME_WAIT
+  TCP    127.0.0.1:58214        SHRIYHA-VIJAY:49675    TIME_WAIT
+  TCP    127.0.0.1:58215        SHRIYHA-VIJAY:49675    TIME_WAIT
+  TCP    127.0.0.1:58216        SHRIYHA-VIJAY:49675    TIME_WAIT
+  TCP    127.0.0.1:58217        SHRIYHA-VIJAY:53556    TIME_WAIT
+  TCP    127.0.0.1:59149        SHRIYHA-VIJAY:49675    TIME_WAIT
+  TCP    127.0.0.1:63974        SHRIYHA-VIJAY:63975    ESTABLISHED
+  TCP    127.0.0.1:63975        SHRIYHA-VIJAY:63974    ESTABLISHED
+  TCP    127.0.0.1:65239        SHRIYHA-VIJAY:49675    TIME_WAIT
+  TCP    127.0.0.1:65244        SHRIYHA-VIJAY:49675    TIME_WAIT
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:49696  se-in-f188:5228        ESTABLISHED
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:49741  [2603:1040:a06:6::]:https  ESTABLISHED
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:50203  [2a04:4e42:25::810]:https  ESTABLISHED
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:50321  [2603:1046:c04:838::2]:https  ESTABLISHED
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:50937  whatsapp-cdn6-shv-03-maa3:5222  ESTABLISHED
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:50939  [64:ff9b::490:84df]:https  TIME_WAIT
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:50959  [2001:4860:4802:38::223]:https  TIME_WAIT
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:51334  lcmaaa-am-in-x03:https  ESTABLISHED
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:51336  a184-28-109-248:https  ESTABLISHED
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:53286  lcmaaa-az-in-x0e:https  ESTABLISHED
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:53636  pnmaaa-bb-in-x03:https  TIME_WAIT
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:53637  [64:ff9b::490:84df]:https  TIME_WAIT
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:53638  [64:ff9b::14bd:ad0a]:https  TIME_WAIT
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:53639  [64:ff9b::4e6:ab7c]:https  TIME_WAIT
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:54194  pnmaaa-bb-in-x03:https  ESTABLISHED
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:54205  ec2-54-144-119-103:https  TIME_WAIT
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:54212  [2403:8600:c090:42:a000::300]:https  ESTABLISHED
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:55755  [64:ff9b::14bd:ad0a]:https  ESTABLISHED
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:55757  [2603:1030:10:12::2e7]:https  TIME_WAIT
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:55772  ec2-3-222-198-49:https  TIME_WAIT
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:56193  [2001:4860:4802:36::223]:https  ESTABLISHED
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:57767  whatsapp-cdn6-shv-02-maa5:https  ESTABLISHED
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:57770  ec2-54-144-119-103:https  TIME_WAIT
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:58220  [64:ff9b::d59:b30e]:https  TIME_WAIT
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:58221  [2603:1040:a06:6::]:https  ESTABLISHED
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:58222  [64:ff9b::14bd:ad1b]:https  TIME_WAIT
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:58226  ec2-54-144-119-103:https  TIME_WAIT
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:58227  [64:ff9b::346a:50d]:https  TIME_WAIT
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:59148  [2403:8600:c090:42:a000::200]:domain  TIME_WAIT
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:59563  g2600-140f-5e00-0014-0000-0000-17d3-3c32:https  ESTABLISHED
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:59564  [64:ff9b::287e:1183]:https  ESTABLISHED
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:59565  [64:ff9b::287e:1183]:https  ESTABLISHED
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:59566  [64:ff9b::287e:1183]:https  ESTABLISHED
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:62676  [2403:8600:c090:42:a000::200]:domain  TIME_WAIT
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:63847  g2600-140f-5e00-0a89-0000-0000-0000-3114:https  ESTABLISHED
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:65228  lcmaaa-aq-in-f14:https  TIME_WAIT
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:65229  [64:ff9b::490:84df]:https  TIME_WAIT
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:65230  [64:ff9b::4e6:ab7c]:https  TIME_WAIT
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:65231  [64:ff9b::287e:1187]:https  ESTABLISHED
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:65232  g2600-140f-0006-0000-0000-0000-17c7-4559:https  ESTABLISHED
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:65233  [64:ff9b::490:84df]:https  TIME_WAIT
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:65234  [64:ff9b::490:84df]:https  TIME_WAIT
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:65237  [64:ff9b::490:84df]:https  TIME_WAIT
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:65238  [64:ff9b::490:84df]:https  TIME_WAIT
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:65240  g2600-140f-0006-0000-0000-0000-17c7-4559:https  ESTABLISHED
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:65241  [64:ff9b::490:84df]:https  TIME_WAIT
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:65243  [64:ff9b::490:84df]:https  TIME_WAIT
+  TCP    [2403:8600:c090:42:0:400:3056:f47b]:65245  [64:ff9b::14bd:ad0a]:https  ESTABLISHED
+
+C:\Users\admin>tracert google.com
+
+Tracing route to google.com [2404:6800:4007:832::200e]
+over a maximum of 30 hops:
+
+  1     4 ms     3 ms     3 ms  2403:8600:c090:42::1
+  2     *        *        *     Request timed out.
+  3     *        *        *     Request timed out.
+  4   191 ms    41 ms    58 ms  pnmaaa-az-in-x0e.1e100.net [2404:6800:4007:832::200e]
+
+Trace complete.
+
+C:\Users\admin>arp -a
+
+Interface: 169.254.216.112 --- 0x9
+  Internet Address      Physical Address      Type
+  169.254.255.255       ff-ff-ff-ff-ff-ff     static
+  224.0.0.22            01-00-5e-00-00-16     static
+  224.0.0.251           01-00-5e-00-00-fb     static
+  224.0.0.252           01-00-5e-00-00-fc     static
+  230.0.0.1             01-00-5e-00-00-01     static
+  239.255.255.250       01-00-5e-7f-ff-fa     static
+  255.255.255.255       ff-ff-ff-ff-ff-ff     static
+
+C:\Users\admin>route print
+===========================================================================
+Interface List
+ 10...c4 c6 e6 de 1d af ......Intel(R) Ethernet Connection (23) I219-V
+ 18...68 34 21 81 7c 71 ......Microsoft Wi-Fi Direct Virtual Adapter
+  9...68 34 21 81 7c 70 ......Intel(R) Wi-Fi 6E AX211 160MHz #2
+  1...........................Software Loopback Interface 1
+===========================================================================
+
+IPv4 Route Table
+===========================================================================
+Active Routes:
+Network Destination        Netmask          Gateway       Interface  Metric
+        127.0.0.0        255.0.0.0         On-link         127.0.0.1    331
+        127.0.0.1  255.255.255.255         On-link         127.0.0.1    331
+  127.255.255.255  255.255.255.255         On-link         127.0.0.1    331
+      169.254.0.0      255.255.0.0         On-link   169.254.216.112    286
+  169.254.216.112  255.255.255.255         On-link   169.254.216.112    286
+  169.254.255.255  255.255.255.255         On-link   169.254.216.112    286
+        224.0.0.0        240.0.0.0         On-link         127.0.0.1    331
+        224.0.0.0        240.0.0.0         On-link   169.254.216.112    286
+  255.255.255.255  255.255.255.255         On-link         127.0.0.1    331
+  255.255.255.255  255.255.255.255         On-link   169.254.216.112    286
+===========================================================================
+Persistent Routes:
+  None
+
+IPv6 Route Table
+===========================================================================
+Active Routes:
+ If Metric Network Destination      Gateway
+  9    286 ::/0                     fe80::eedd:24ff:fe3d:ced5
+  1    331 ::1/128                  On-link
+  9    286 2403:8600:c090:42::/84   On-link
+  9    286 2403:8600:c090:42:0:400:3056:f47b/128
+                                    On-link
+  9    286 fe80::/64                On-link
+  9    286 fe80::6d3a:ba45:da88:ebc2/128
+                                    On-link
+  1    331 ff00::/8                 On-link
+  9    286 ff00::/8                 On-link
+===========================================================================
+Persistent Routes:
+  None
+
+C:\Users\admin>pathping google.com
+
+Tracing route to google.com [2404:6800:4007:832::200e]
+over a maximum of 30 hops:
+  0  SHRIYHA-VIJAY.saveetha.in [2403:8600:c090:42:0:400:3056:f47b]
+  1  2403:8600:c090:42::1
+  2     *        *        *
+Computing statistics for 25 seconds...
+            Source to Here   This Node/Link
+Hop  RTT    Lost/Sent = Pct  Lost/Sent = Pct  Address
+  0                                           SHRIYHA-VIJAY.saveetha.in [2403:8600:c090:42:0:400:3056:f47b]
+                                0/ 100 =  0%   |
+  1   24ms     0/ 100 =  0%     0/ 100 =  0%  2403:8600:c090:42::1
+
+Trace complete.
+
+C:\Users\admin>
